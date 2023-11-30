@@ -1,57 +1,66 @@
 import React from 'react'
-import styled from 'styled-components'
-import {Bio} from "../../Data/constants"
+import HeroBgAnimation from '../HeroBgAnimation'
+import HeroImg from '../../images/mainImg.JPEG'
 import Typewriter from 'typewriter-effect';
-import mainImg from '../../images/mainImg.JPEG'
+import { Bio } from '../../Data/constants';
+import styled from 'styled-components';
 const HeroSection = () => {
-  return (
-      <div id="about">
-          <HeroContainer>
-              <HeroBg>
-              </HeroBg>
-              <HeroInnerContainer>
-                  <HeroLeftContainer>
-                    <Title>Hi, I am <br/>{Bio.name}</Title>
-                    <TextLoop>I am a 
-                      <Span>
-                        <Typewriter options={{
-                          strings:Bio.roles,
-                          autoStart:true,
-                          loop:true,
-                        }}/>
-                      </Span>
-                    </TextLoop>
-                    <SubTitle>{Bio.description}</SubTitle>
-                    <ResumeButton href={Bio.resume} target='_blank'>Check Resume</ResumeButton>
-                  </HeroLeftContainer>
-                  <HeroRightContainer>
-                    <Image src={mainImg} alt="mainImg"/>
-                  </HeroRightContainer>
-              </HeroInnerContainer>
-          </HeroContainer>
-      </div>
-  );
+    return (
+        <div id="about">
+            <HeroContainer>
+                <HeroBg>
+                    <HeroBgAnimation />
+                </HeroBg>
+                <HeroInnerContainer >
+                    <HeroLeftContainer id="Left">
+                        <Title>Hi, I am <br /> {Bio.name}</Title>
+                        <TextLoop>
+                            I am a
+                            <Span>
+                                <Typewriter
+                                    options={{
+                                        strings: Bio.roles,
+                                        autoStart: true,
+                                        loop: true,
+                                    }}
+                                />
+                            </Span>
+                        </TextLoop>
+                        <SubTitle>{Bio.description}</SubTitle>
+                        <ResumeButton href={Bio.resume} target='display'>Check Resume</ResumeButton>
+                    </HeroLeftContainer>
+
+                    <HeroRightContainer id="Right">
+
+                        <Img src={HeroImg} alt="hero-image" />
+                    </HeroRightContainer>
+                </HeroInnerContainer>
+
+            </HeroContainer>
+        </div>
+    )
 }
 
 export default HeroSection
 
-const HeroContainer = styled.div`
-  background-color:${({theme})=>theme.card_Light};
-  display: flex;
-  justify-content: center;
-  position: relative;
-  padding: 80px 30px;
-  @media screen and (max-width: 960px) {
-    padding: 66px 16px;
-  };
-  @media screen and (max-width: 480px) {
-    padding: 32px 16px;
-  };
-  z-index: 1;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%,0 100%);
+ const HeroContainer = styled.div`
+    background: ${({ theme }) => theme.card_light};
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 80px 30px;
+    @media (max-width: 960px) {
+        padding: 66px 16px;
+    }
+    @media (max-width: 640) {
+        padding: 32px 16px;
+    }
+    z-index: 1;
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 `;
 
-const HeroBg = styled.div`
+ const HeroBg = styled.div`
     position: absolute;
     display: flex;
     justify-content: end;
@@ -75,7 +84,7 @@ const HeroBg = styled.div`
     }
 `;
 
-const HeroInnerContainer = styled.div`
+ const HeroInnerContainer = styled.div`
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -87,8 +96,7 @@ const HeroInnerContainer = styled.div`
         flex-direction: column;
     }
 `;
-
-const HeroLeftContainer = styled.div`
+ const HeroLeftContainer = styled.div`
     width: 100%;
     order: 1;
     @media (max-width: 960px) {
@@ -108,7 +116,7 @@ const HeroLeftContainer = styled.div`
     }
 `;
 
-const HeroRightContainer = styled.div`
+ const HeroRightContainer = styled.div`
     width: 100%;
     display: flex;
     order: 2;
@@ -221,11 +229,12 @@ const HeroRightContainer = styled.div`
     background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
     box-shadow:  20px 20px 60px #1F2634,
     -20px -20px 60px #1F2634;
+
     &:hover {
         transform: scale(1.05);
-    transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634;
-    filter: brightness(1);
+        transition: all 0.4s ease-in-out;
+        box-shadow:  20px 20px 60px #1F2634;
+        filter: brightness(1);
     }    
     
     
@@ -233,25 +242,4 @@ const HeroRightContainer = styled.div`
         padding: 12px 0;
         font-size: 18px;
     } 
-
-`;
-const Image = styled.img`
-    width: 100%;
-    height: 100%;
-    position: relative;
-    border-radius: 50%;
-    max-height: 400px;
-    max-width: 400px;
-    object-fit: cover;
-    object-position: center;
-    border: 2px solid ${({ theme }) => theme.primary};
-    @media screen and (max-width: 960px) {
-        max-height: 400px;
-        max-width: 400px;
-    }
-
-    @media screen and (max-width: 640px) {
-        max-height: 280px;
-        max-width: 280px;
-    }
 `;
