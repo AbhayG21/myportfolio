@@ -213,7 +213,7 @@ export default HeroSection
      -moz-appearance: button;
      appearance: button;
      text-decoration: none;
-     width: 95%;
+     width: 95% !important;
      max-width: 300px;
      text-align: center;
      padding: 16px 0;
