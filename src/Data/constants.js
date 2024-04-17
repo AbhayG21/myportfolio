@@ -17,6 +17,77 @@ export const Bio = {
 
 export const skills = [
     {
+        title: "Coding & Others",
+        skills: [
+            {
+                name: "Java",
+                image: "https://www.vectorlogo.zone/logos/java/java-icon.svg",
+            },
+            {
+                name: "C++",
+                image: "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png",
+            },
+            {
+                name: "Python",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
+            },
+            // {
+            //     name: "Git",
+            //     // image: "https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667",
+            //     image: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+            // },
+            {
+                name: "GitHub",
+                image: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+            },
+            // {
+            //     name: "Docker",
+            //     image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
+            // },
+            // {
+            //     name: "Netlify",
+            //     image: "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
+            // },
+            {
+                name: "VS Code",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
+            },
+            // {
+            //     name: "Postman",
+            //     image: "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
+            // },
+            // {
+            //     name: "Adobe XD",
+            //     image: "https://camo.githubusercontent.com/c205ecbe12500177d102169d97bc1c17c545155fdf5ec78c08d54ac53e5b38c1/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f61646f62652d78642e737667",
+            // },
+            // {
+            //     name: "Figma",
+            //     image: "https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667",
+            // },
+        ],
+    },
+    {
+        title: "iOS",
+        skills: [
+            {
+                name: "Swift",
+                image: "https://cdn-icons-png.flaticon.com/512/732/732250.png",
+            },
+            {
+                name: "SwiftUI",
+                image: "https://developer.apple.com/assets/elements/icons/swiftui/swiftui-96x96_2x.png",
+            },
+            {
+                name: "XCode",
+                image: "https://developer.apple.com/assets/elements/icons/xcode-12/xcode-12-96x96_2x.png",
+            },
+            {
+                name: "iOS Simulator",
+                image: "https://developer.apple.com/assets/elements/icons/simulator/simulator-96x96_2x.png",
+            },
+        ],
+    },
+    {
         title: "Frontend",
         skills: [
             {
@@ -76,10 +147,7 @@ export const skills = [
             //   name: "Graph Ql",
             //   image: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
             // },
-            {
-                name: "Python",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
-            },
+
             {
                 name: "MySQL",
                 image: "https://cdn-icons-png.flaticon.com/512/5968/5968313.png",
@@ -99,72 +167,6 @@ export const skills = [
             },
         ],
     },
-    {
-        title: "iOS",
-        skills: [
-            {
-                name: "Swift",
-                image: "https://cdn-icons-png.flaticon.com/512/732/732250.png",
-            },
-            {
-                name: "SwiftUI",
-                image: "https://developer.apple.com/assets/elements/icons/swiftui/swiftui-96x96_2x.png",
-            },
-            {
-                name: "XCode",
-                image: "https://developer.apple.com/assets/elements/icons/xcode-12/xcode-12-96x96_2x.png",
-            },
-            {
-              name:"iOS Simulator",
-              image:"https://developer.apple.com/assets/elements/icons/simulator/simulator-96x96_2x.png"
-            }
-        ],
-    },
-    {
-        title: "Others",
-        skills: [
-            {
-                name: "Git",
-                image: "https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667",
-            },
-            {
-                name: "GitHub",
-                image: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-            },
-            // {
-            //     name: "Docker",
-            //     image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
-            // },
-            // {
-            //     name: "Netlify",
-            //     image: "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
-            // },
-            {
-                name: "VS Code",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
-            },
-            // {
-            //     name: "Postman",
-            //     image: "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
-            // },
-            // {
-            //     name: "Adobe XD",
-            //     image: "https://camo.githubusercontent.com/c205ecbe12500177d102169d97bc1c17c545155fdf5ec78c08d54ac53e5b38c1/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f61646f62652d78642e737667",
-            // },
-            // {
-            //     name: "Figma",
-            //     image: "https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667",
-            // },
-            {
-                name: "Java",
-                image: "https://www.vectorlogo.zone/logos/java/java-icon.svg",
-            },
-            {
-                name: "C++",
-                image: "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png",
-            },
-        ],
-    },
 ];
 
 export const education = [
@@ -173,7 +175,7 @@ export const education = [
         img: "https://collegeindia.in/uploads/university_logo/chitkara-university-college-of-art-and-design-logo-14-08-2018.png",
         school: "Chitkara University",
         date: "Sep 2021 - Sep 2025",
-        grade: "9.66 CGPA",
+        grade: "9.59 CGPA",
         desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Chitkara University, Rajpura. I have completed 4 semesters and have a CGPA of 9.66. I have taken courses in DSA, Object-Oriented Programming, Database Management Systems, Operating Systems, among others.",
         degree: "Bachelor of Engineering - BE, Computer Science and Engineering",
     },
